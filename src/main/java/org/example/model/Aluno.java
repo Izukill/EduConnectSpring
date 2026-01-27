@@ -6,7 +6,6 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.util.List;
-import java.util.Objects;
 
 
 @Getter
@@ -34,7 +33,6 @@ public class Aluno extends Pessoa{
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "turma_id", nullable = true)
     private Turma turma;
-
 
     @Column(unique = true, nullable = false)
     private String matricula;

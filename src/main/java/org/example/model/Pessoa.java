@@ -13,8 +13,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@Entity
 @Table(name = "Pessoas")
+@Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Pessoa {
 
