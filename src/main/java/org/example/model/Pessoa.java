@@ -40,6 +40,7 @@ public class Pessoa {
 
     private String  telefone;
 
+    @Column(unique = true)
     private String cpf;
 
 
