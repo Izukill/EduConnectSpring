@@ -41,6 +41,7 @@ public class AlunoService {
             Turma turmaExemplo = Turma.builder().lookupId(turmaId).build();
 
 
+
             Turma turmaEncontrada = turmaRepository.findOne(Example.of(turmaExemplo))
                     .orElseThrow(() -> new EntidadeNaoEncontradaException("Turma", turmaId));
 

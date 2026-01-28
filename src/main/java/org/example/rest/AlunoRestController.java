@@ -90,7 +90,7 @@ public class AlunoRestController implements AlunoRestControllerAPI {
         return new ResponseEntity<>(resultado, HttpStatus.OK);
     }
 
-    // Método auxiliar privado (Padrão do Professor)
+
     private Aluno validarExiste(UUID lookupId) throws EntidadeNaoEncontradaException {
         Optional<Aluno> opt = service.buscarPor(lookupId);
         if (opt.isEmpty()) {
